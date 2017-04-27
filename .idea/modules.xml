@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/base-exception-json/base-exception-json.iml" filepath="$PROJECT_DIR$/base-exception-json/base-exception-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-exception-web/base-exception-web.iml" filepath="$PROJECT_DIR$/base-exception-web/base-exception-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore.iml" filepath="$PROJECT_DIR$/bookstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-geteway/bookstore-geteway.iml" filepath="$PROJECT_DIR$/bookstore-geteway/bookstore-geteway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-server-ha/bookstore-server-ha.iml" filepath="$PROJECT_DIR$/bookstore-server-ha/bookstore-server-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-service-org/bookstore-service-org.iml" filepath="$PROJECT_DIR$/bookstore-service-org/bookstore-service-org.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-service-purchasing/bookstore-service-purchasing.iml" filepath="$PROJECT_DIR$/bookstore-service-purchasing/bookstore-service-purchasing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-service-report/bookstore-service-report.iml" filepath="$PROJECT_DIR$/bookstore-service-report/bookstore-service-report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-web/bookstore-web.iml" filepath="$PROJECT_DIR$/bookstore-web/bookstore-web.iml" />
+    </modules>
+  </component>
+</project>

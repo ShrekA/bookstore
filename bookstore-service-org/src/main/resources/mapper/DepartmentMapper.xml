@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sun.mapper.DepartmentMapper">
+  <resultMap id="BaseResultMap" type="org.sun.entity.Department">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="CODE" jdbcType="INTEGER" property="code" />
+    <result column="P_ID" jdbcType="INTEGER" property="pId" />
+    <result column="M_ID" jdbcType="INTEGER" property="mId" />
+    <result column="TEL_PHONE" jdbcType="VARCHAR" property="telPhone" />
+    <result column="OPERATINGCOSTS" jdbcType="REAL" property="operatingcosts" />
+  </resultMap>
+</mapper>
