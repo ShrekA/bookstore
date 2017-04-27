@@ -1,4 +1,4 @@
-package web;
+package org.sun.exception;
 
 /**
  * Created by Mr.sun on 2017/3/23.

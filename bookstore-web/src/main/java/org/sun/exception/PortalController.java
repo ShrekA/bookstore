@@ -1,10 +1,7 @@
-package org.sun.web;
+package org.sun.exception;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-
-import javax.jws.WebParam;
 
 /**
  * Created by Mr.sun on 2017/4/18.

@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base-exception-json" />
-        <module name="base-exception-web" />
+        <module name="base-tools" />
         <module name="bookstore-book" />
         <module name="bookstore-book-service" />
         <module name="bookstore-geteway" />
@@ -19,11 +18,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="base-exception-json" target="1.8" />
-      <module name="base-exception-web" target="1.8" />
+      <module name="base-tools" target="1.8" />
       <module name="bookstore" target="1.8" />
-      <module name="bookstore-book" target="1.8" />
-      <module name="bookstore-book-service" target="1.8" />
       <module name="bookstore-geteway" target="1.8" />
       <module name="bookstore-server-ha" target="1.8" />
       <module name="bookstore-service-book" target="1.8" />
@@ -31,7 +27,6 @@
       <module name="bookstore-service-purchasing" target="1.8" />
       <module name="bookstore-service-report" target="1.8" />
       <module name="bookstore-web" target="1.8" />
-      <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

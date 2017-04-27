@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@EntityScan(value = "org.sun.entity")
 @ServletComponentScan(value = "org.sun.cfg.cfg")
 public class BookstoreWebApplication {
 

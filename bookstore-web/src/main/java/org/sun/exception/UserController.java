@@ -1,4 +1,4 @@
-package org.sun.web;
+package org.sun.exception;
 
 import org.springframework.stereotype.Controller;
 

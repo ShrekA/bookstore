@@ -107,12 +107,10 @@
             <scope>test</scope>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.sun</groupId>-->
-            <!--<artifactId>base-exception-json</artifactId>-->
-            <!--<version>1.0-SP</version>-->
-        <!--</dependency>-->
-
+        <dependency>
+            <groupId>org.sun</groupId>
+            <artifactId>base-tools</artifactId>
+        </dependency>
 
     </dependencies>
 

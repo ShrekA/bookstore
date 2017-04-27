@@ -1,4 +1,4 @@
-package org.sun.web;
+package org.sun.exception;
 
 public class ErrorInfo {
     private String url;

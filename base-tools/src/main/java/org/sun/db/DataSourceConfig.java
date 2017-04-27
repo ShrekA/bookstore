@@ -1,4 +1,4 @@
-package org.sun.cfg;
+package org.sun.db;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
