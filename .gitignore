@@ -24,6 +24,7 @@ dist/
 nbdist/
 .nb-gradle/
 
+.gitignore
 base-tools/src/test/
 bookstore-web/src/main/java/org/sun/cfg/
 bookstore-web/src/main/resources/static/img/
