@@ -1,0 +1,32 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+base-tools/src/test/
+bookstore-web/src/main/java/org/sun/cfg/
+bookstore-web/src/main/resources/static/img/
+bookstore-web/src/main/resources/static/js/
+bookstore-web/src/main/resources/templates/notice/
+logs/
