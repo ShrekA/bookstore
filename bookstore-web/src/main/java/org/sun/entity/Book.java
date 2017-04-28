@@ -7,17 +7,9 @@ import java.io.Serializable;
  * Created by Mr.sun on 2017/4/18.
  * 书本实体
  */
-@Entity
-@Table(name = "book")
 public class Book implements Serializable {
 
-    @Id
-    @GeneratedValue
     private Long id;
-    /**
-     * 编号
-     */
-    @Column(name = "code",length = 20)
     private String code;
     /**
      * 书名

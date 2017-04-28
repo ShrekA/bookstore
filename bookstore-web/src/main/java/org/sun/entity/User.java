@@ -1,21 +1,13 @@
 package org.sun.entity;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
  * Created by Mr.sun on 2017/4/18.
  */
-@Entity
-@Table(name = "user")
 public class User implements Serializable {
 
-    @Id
-    @GeneratedValue
     private long id;
 
     private long eId;

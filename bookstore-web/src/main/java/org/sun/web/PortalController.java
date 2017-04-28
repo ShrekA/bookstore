@@ -1,4 +1,4 @@
-package org.sun.exception;
+package org.sun.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
