@@ -1,0 +1,44 @@
+#server configuration:
+server:
+  port: 8111
+  tomcat:
+    #配置Tomcat编码，默认为UTF-8
+    uri-encoding: UTF-8
+    #Tomcat是否开启压缩，默认为关闭
+    compression:  on
+  session:
+    #用户会话session过期时间，以秒为单位
+    timeout: 1000000
+
+##LOG Configuration:
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  #thymeleaf configuration
+  thymeleaf:
+    #Enable template caching.
+    cache: false
+    check-template: true
+    #Check that the templates location exists.
+    check-template-location: true
+    #Content-Type value.
+    content-type: text/html
+    # Enable MVC Thymeleaf view resolution.
+    enabled: true
+    # Template encoding.
+    encoding: utf-8
+    mode: HTML5
+    # Prefix that gets prepended to view names when building a URL.
+    prefix: classpath:/templates/
+    #Suffix that gets appended to view names when building a URL.
+    suffix: .html
+  application:
+    name: bookstore-web
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:1111/eureka/

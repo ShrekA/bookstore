@@ -71,7 +71,14 @@ public class UserController {
 
     @ApiOperation(value = "列出所有用户", notes = "")
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    public List<HashMap<String,String>> listAll(){
+    public List<HashMap<String, String>> listAll() {
         return userService.listAll();
+    }
+
+
+    @ApiOperation(value = "用户登录", notes = "")
+    @PostMapping("/login")
+    public User login(String account, String passwd) {
+        return userService.login(account, passwd);
     }
 }

@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
 <head lang="en">
     <meta charset="UTF-8"/>
+    <meta content="text/html;charset=UTF-8"/>
+    <!--<link th:src="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>-->
+    <!--<link th:src="@{bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>-->
+    <!--<script type="text/javascript" th:src="@{jquery-1.10.2.min.js}"></script>-->
+    <!--<script type="text/javascript" th:src="@{bootstrap/js/bootstrap.min.js}"></script>-->
     <title></title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <!-- Custom styles for this template -->
     <link href="css/signin.css" rel="stylesheet"/>
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -16,28 +24,41 @@
 <body>
 <div class="container">
 
-    <form class="form-signin" onsubmit="login()">
+    <div class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="email" class="sr-only">Email address</label>
-        <input type="email" id="email" class="form-control" placeholder="Email address"/>
+        <label for="account" class="sr-only">Email address</label>
+        <input type="text" id="account" class="form-control" placeholder="Account" required="required"/>
         <label for="passwd" class="sr-only">Password</label>
-        <input type="password" id="passwd" class="form-control" placeholder="Password"/>
+        <input type="password" id="passwd" class="form-control" placeholder="Password" required="required"/>
         <div class="checkbox">
             <label>
                 <input type="checkbox" value="remember-me"/> Remember me
             </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block"  type="submit">Sign in</button>
-    </form>
+        <button class="btn btn-lg btn-primary btn-block" type="button" id="btn">Sign in
+        </button>
+    </div>
 </div>
 <script type="application/javascript">
+    $(function () {
+        $("#btn").on('click', function () {
+            alert("aaa");
+            var account = $("#account").val();
+            var passonwd = $("#passwd").val();
+            var data = {'account': account, 'passwd': passwd};
+            alert(data);
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8111/dologin",
+                data: data,
+                dataType: "text",
+                success: function (data) {
+                    alert(data);
+                }
+            });
+        });
 
-    function login() {
-        var email = $("email").val();
-        var passwd = $("passwd").val();
-        alert(email);
-        alert(passwd);
-    }
+    });
 </script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 package org.sun.web;
 
+import com.sun.istack.internal.NotNull;
+import com.sun.istack.internal.Nullable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,16 +12,20 @@ import org.springframework.web.bind.annotation.*;
 public class PortalController {
 
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
     @GetMapping(value = "/")
     String toLogin() {
         return "login";
     }
 
-    @PostMapping(value = "/login")
+    @PostMapping(value = "/dologin")
     @ResponseBody
-    String doLogin() {
-        return "abc";
+    String doLogin(@NotNull String account, @NotNull String passwd) {
+        System.out.print(account + passwd + "~~~~~~~~~~~~~~~~~~~~~");
+        if (account.equals("sunny") && passwd.equals("123456"))
+            return "success";
+        else
+            return "fail.";
+
     }
 
 }

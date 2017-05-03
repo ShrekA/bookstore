@@ -18,4 +18,11 @@
             E.PHONE_NUM
         FROM BS_BSO.USER AS U LEFT JOIN BS_BSO.EMPLOYEE AS E ON U.E_CODE = E.E_CODE
     </select>
+
+    <select id="login" resultMap="BaseResultMap">
+        SELECT U.*
+        FROM BS_BSO.USER AS U
+        WHERE U.ACCOUNT = '${account}' AND U.PASSWD = '${passwd}'
+    </select>
+
 </mapper>

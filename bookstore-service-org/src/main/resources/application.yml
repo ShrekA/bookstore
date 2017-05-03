@@ -32,7 +32,7 @@ spring:
     max-pool-prepared-statement-per-connection-size: 20
     connection-properties: config.decrypt=true;druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     filters: stat,wall,log4j2
-    schema: classpath:schemas/init-ddl.sql
+    #schema: classpath:schemas/init-ddl.sql
 
 
 #mybatis configuration
@@ -53,7 +53,9 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
 
-#eureka:
-#  client:
-#    service-url:
-#          defaultZone: http://localhost:1111/eureka/
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:1111/eureka/
